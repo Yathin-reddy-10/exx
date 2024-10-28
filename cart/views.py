@@ -5,7 +5,7 @@ from django.http import JsonResponse
 from django.contrib import messages
 
 def cart_summary(request):
-	# Get the cart
+	
 	cart = Cart(request)
 	cart_products = cart.get_prods
 	quantities = cart.get_quants
